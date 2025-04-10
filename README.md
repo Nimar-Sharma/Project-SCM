@@ -2,6 +2,6 @@
 Our Team Members
 Nimar Sharma - 2410990473
 Yash Goyal - 2410990487
-Manan
+Manan - 2410990433
 Laksh
 Tushar
