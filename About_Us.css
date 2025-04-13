@@ -101,19 +101,18 @@ body {
     margin: 0.5rem 0;
   }
   
-  .button {
-    border: none;
-    outline: none;
-    padding: 0.5rem 1rem;
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background */
     color: white;
-    background-color: #333;
-    text-align: center;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
   }
   
-  .button:hover {
-    background-color: #555;
+  .button-link:hover {
+    background-color: #0056b3;
   }
   
