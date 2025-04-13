@@ -84,7 +84,7 @@ body {
   }
   .external {
     overflow: hidden;
-    height: 120vh;
+    height: 100vh;
   }
   
   .horizontal-scroll-wrapper {
@@ -152,7 +152,9 @@ body {
   
   header {
     bottom: 1rem;
+    margin-top: 3rem; /* Add this line */
   }
+  
   .scroll-info {
     top: 1rem;
   }
