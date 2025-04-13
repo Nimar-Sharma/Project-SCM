@@ -104,7 +104,7 @@ body {
   .button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF; /* Blue background */
+    background-color: #5D4037; /* Blue background */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -113,6 +113,6 @@ body {
   }
   
   .button-link:hover {
-    background-color: #0056b3;
+    background-color: #ffcc00;
   }
   
