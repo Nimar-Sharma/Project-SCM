@@ -143,7 +143,6 @@ body {
   }
   .last {
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
-    margin-bottom: 5rem; /* Add spacing under the last image */
   }
   .scroll-info, header {
     position: absolute;
@@ -153,9 +152,7 @@ body {
   
   header {
     bottom: 1rem;
-    margin-top: 3rem; /* Add this line */
   }
-  
   .scroll-info {
     top: 1rem;
   }
