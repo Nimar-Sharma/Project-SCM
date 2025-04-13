@@ -84,7 +84,7 @@ body {
   }
   .external {
     overflow: hidden;
-    height: 100vh;
+    height: 120vh;
   }
   
   .horizontal-scroll-wrapper {
