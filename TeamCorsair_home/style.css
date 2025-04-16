@@ -224,4 +224,42 @@ body {
   .blog-post a:hover {
     text-decoration: underline;
   }
+  .column {
+    flex: 1 1 300px;
+    max-width: 300px;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
   
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #5D4037;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    color: gray;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .footer {
+    white-space: 3rem;
+  }
