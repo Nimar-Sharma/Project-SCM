@@ -1,3 +1,9 @@
+.icon {
+  width: 50px;  /* Set the width and height */
+  height: 50px;
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden;
+}
 /* Base Styles */
 body {
     font-family: 'Courier New', monospace;
@@ -180,4 +186,3 @@ body {
   .button-link:hover {
     background-color: #ffcc00;
   }
-  
