@@ -152,28 +152,15 @@ article {
     font-size: min(200%, 4vmin);
 
     padding: 5vmin;
-  } */
-
-  h1, p, body {
-    margin: 0;
-    text-wrap: balance;
   }
 
-  h1 {
-    line-height: 1.25cap;
+   */
+   .const {
+    border: 2px solid;
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5rem auto;
+    background-color: rgba(255, 255, 255, 0.5); /* optional: slightly visible background */
   }
-
-  p {
-    font-family: "Dank Mono", ui-monospace, monospace;
-  }
-
-  /* html {
-    block-size: 100%;
-  } */
-
-  article {
-    display: grid;
-    gap: 1lh;
-    text-align: center;
-  }
-}
+}  
