@@ -56,3 +56,26 @@ main {
 .blog-post a:hover {
   text-decoration: underline;
 }
+@media (max-width: 600px) {
+  .blog-post {
+    padding: 1rem;
+    font-size: 0.95rem;
+    margin: 1rem 0;
+  }
+
+  .blog-post h2 {
+    font-size: 1.2rem;
+  }
+
+  .blog-post p {
+    font-size: 0.95rem;
+    line-height: 1.6; /* optional */
+  }
+
+  .blog-post a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
