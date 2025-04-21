@@ -1,4 +1,6 @@
-  /* Nav bar css starts */
+
+
+/* Nav bar css starts */
   /* Basic reset for padding and margin */
 * {
     margin: 0;
@@ -67,5 +69,7 @@ body {
     width: 3.2rem;
     height: 3.2rem;
     margin-right: 2rem;
+    filter: none;
+
 }
 /* Nav bar css closed */
