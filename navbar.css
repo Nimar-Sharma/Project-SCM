@@ -62,4 +62,10 @@ body {
 .navbar ul li a:hover {
     color: #ffcc00;
 }
+.logo {
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 2rem;
+}
 /* Nav bar css closed */
