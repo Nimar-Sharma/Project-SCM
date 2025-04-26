@@ -157,3 +157,22 @@ article {
     background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent background */
   }
 }
+
+.content-container {
+  width: 1200px;
+  height: 225px; 
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 3.5px solid #5D4037; /* Classic Dark Brown Border */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+
+}
+
+p{
+  font-size: 1.2rem;
+}
