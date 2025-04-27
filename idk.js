@@ -58,3 +58,32 @@
       chatBox.innerHTML += newChatDiv;
       chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: "smooth" });
       chatInput.value = "";
+      // Fake typing indicator
+      const typingDiv = chatTemplate({
+        class: "ai",
+        text: "Typing...",
+        date: new Date(new Date().getTime() + 1000).toLocaleTimeString()
+      });
+
+      setTimeout(() => {
+        chatBox.innerHTML += typingDiv;
+        chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: "smooth" });
+
+        // Replace typing after 2s
+        setTimeout(() => {
+          // Remove the "Typing..." message
+          chatBox.removeChild(chatBox.lastElementChild);
+
+          const aiReplyDiv = chatTemplate({
+            class: "ai",
+            text: aiResponse(chatInput.value.trim()),
+            date: new Date().toLocaleTimeString()
+          });
+          chatBox.innerHTML += aiReplyDiv;
+          chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: "smooth" });
+        }, 2000);
+
+      }, 500);
+
+    }
+  }
