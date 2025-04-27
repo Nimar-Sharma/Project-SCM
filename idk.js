@@ -87,3 +87,16 @@
 
     }
   }
+  function aiResponse(userInput) {
+    const cleanedInput = userInput.toLowerCase();
+    if (cleanedInput.includes("hi") || cleanedInput.includes("hello") || cleanedInput.includes("hey")) {
+      return randomItem(responses.greetings);
+    }
+    return randomItem(responses.default);
+  }
+
+  function randomItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+})();
