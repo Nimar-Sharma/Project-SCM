@@ -166,3 +166,48 @@ main {
   background-color: rgba(255,255,255,0.7);
   border-top: 2px solid #5D4037;
 }
+
+.chat-input {
+  flex-grow: 1;
+  height: 44px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 2px solid #5D4037;
+  border-radius: 8px;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: #FF007F;
+}
+
+.chat-submit {
+  width: 70px;
+  height: 47px;
+  margin-left: 8px;
+  border: 2px solid #5D4037;
+  background-color: #69AAFF;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.chat-submit:hover {
+  background-color: #80BBFF;
+  cursor: pointer;
+}
+
+.chat-submit:focus {
+  outline: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .chat-box p {
+    font-size: 16px;
+  }
+  .chat-input {
+    font-size: 16px;
+  }
+}
+
+/* Chat Box Styling End */
