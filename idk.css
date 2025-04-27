@@ -69,3 +69,100 @@ article {
     --color-2: hsl(310 100% 59%);
   }
 }
+
+/* Chat Box Styling Start */
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  border: 2px solid #5D4037;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-box-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-box-header {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #5D4037;
+}
+
+.chat-box {
+  margin: 4px;
+  border: 2px solid #5D4037;
+  flex-grow: 1;
+  background-color: #fff;
+  overflow-y: auto;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.chat-box p {
+  margin: 0;
+  padding: 6px;
+  font-size: 20px;
+}
+
+.ai-person-container {
+  margin: 4px 0;
+}
+
+.ai, .person {
+  margin: 6px;
+  padding: 8px;
+  border-radius: 16px;
+  border: 2px solid;
+  display: inline-block;
+  max-width: 70%;
+}
+
+.ai {
+  background-color: #FFEBEE;
+  border-color: #FF5252;
+  float: left;
+  text-align: left;
+}
+
+.person {
+  background-color: #E3F2FD;
+  border-color: #448AFF;
+  float: right;
+  text-align: left;
+}
+
+.ai-date, .person-date {
+  font-size: 10px;
+  clear: both;
+}
+
+.ai-date {
+  float: left;
+  margin-left: 6px;
+}
+
+.person-date {
+  float: right;
+  margin-right: 6px;
+}
+
+.chat-input-container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: rgba(255,255,255,0.7);
+  border-top: 2px solid #5D4037;
+}
