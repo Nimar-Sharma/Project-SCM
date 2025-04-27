@@ -166,7 +166,7 @@ article {
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  border: 3.5px solid #5D4037; /* Classic Dark Brown Border */
+  border: 1px solid #5D4037; /* Classic Dark Brown Border */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
