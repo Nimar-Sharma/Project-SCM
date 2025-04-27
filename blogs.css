@@ -6,13 +6,13 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f9;
   color: #333;
   padding: 20px;
-}
+} */
 
 
 /* Blog Section */
@@ -69,7 +69,7 @@ main {
 
   .blog-post p {
     font-size: 0.95rem;
-    line-height: 1.6; /* optional */
+    line-height: 1.6; 
   }
 
   .blog-post a {

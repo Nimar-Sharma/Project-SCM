@@ -4,10 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 html,
 body {
   overscroll-behavior-x: none;
@@ -15,16 +17,19 @@ body {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 @property --hue1 {
   syntax: "<angle>";
   inherits: false;
   initial-value: 0deg;
 }
+
 @property --hue2 {
   syntax: "<angle>";
   inherits: false;
   initial-value: 0deg;
 }
+
 body {
   font-family: "Geist", sans-serif;
   position: relative;
@@ -33,25 +38,27 @@ body {
   min-height: 100vh;
   text-align: center;
   overflow-x: hidden;
+  /* Classic Color Changes */
   background-image: linear-gradient(
-      in oklch longer hue to right,
+      to right,
       oklch(0.93 0.08 var(--hue1) / 50%),
       oklch(0.93 0.08 var(--hue2) / 50%)
     ),
     linear-gradient(
-      in oklch longer hue to bottom,
+      to bottom,
       oklch(0.93 0.08 var(--hue1) / 50%),
       oklch(0.93 0.08 var(--hue2) / 50%)
     );
 
   background-size: 100% 100%;
-  color: PaleVioletRed;
+  color: #5D4037;  /* Classic Dark Brown Text Color */
 
   animation-name: anim_bg;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 @keyframes anim_bg {
   0% {
     --hue1: 0deg;
@@ -63,9 +70,11 @@ body {
     --hue2: 660deg;
   }
 }
+
 main {
   position: relative;
 }
+
 section {
   position: relative;
   width: 100%;
@@ -74,93 +83,96 @@ section {
   display: grid;
   place-items: center;
 }
+
 h1 {
   text-transform: uppercase;
+  color: #FF007F;  /* Classic Pink color for the main headings */
 }
 
-
-
 /* Background Effects End */
-body {
-    font-family: 'Courier New', monospace;
-      font-weight: 500;
-      /* background: #efecdb; */
-      color: #5D4037;
-    }
-    * {
-      box-sizing: border-box;
-    }
 
+/* Body Styling */
+body {
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+  color: #5D4037;  /* Keeping the classic text color */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Color Variables for Gradients */
 @property --＠color-1 {
   syntax: "<color>";
   inherits: false;
-  initial-value: hsl(98 100% 62%);
+  initial-value: hsl(98 100% 62%);  /* Classic Green */
 }
 
 @property --＠color-2 {
   syntax: "<color>";
   inherits: false;
-  initial-value: hsl(204 100% 59%);
+  initial-value: hsl(204 100% 59%);  /* Classic Blue */
 }
 
-/* keyframes that change the color variable */
+/* Keyframes for Gradient Change */
 @keyframes gradient-change {
   to {
-    --＠color-1: hsl(210 100% 59%);
-    --＠color-2: hsl(310 100% 59%);
+    --＠color-1: hsl(210 100% 59%);  /* Deep Blue */
+    --＠color-2: hsl(310 100% 59%);  /* Deep Purple */
   }
 }
 
 article {
-  /* apply variable changes over time */
+  /* Apply gradient changes over time */
   animation: gradient-change 2s linear infinite alternate;
   
   background: linear-gradient(
-    /* 
-      in oklch produces more vibrant gradient results 
-      learn more https://developer.chrome.com/docs/css-ui/access-colors-spaces#color_interpolation
-    */
-    to right in oklch, 
-    /* use the variables in a gradient (or wherever!) */
-    var(--＠color-1), 
+    to right in oklch,
+    var(--＠color-1),
     var(--＠color-2)
   );
   
-  /* old browser support */
+  /* Text color for background */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  /* modern browser version */
   background-clip: text;
   color: transparent;
 }
+
+/* Styling for .const */
 @layer demo.support {
   h1 {
     font-size: 10vmin;
     line-height: 1.1;
   }
 
-  /* body {
-    background: hsl(204 100% 5%);
-
-    min-block-size: 100%;
-    box-sizing: border-box;
-    display: grid;
-    place-content: center;
-
-    font-family: system-ui, sans-serif;
-    font-size: min(200%, 4vmin);
-
-    padding: 5vmin;
-  }
-
-   */
-   .const {
+  .const {
     border: 2px solid;
     padding: 1rem;
     border-radius: 10px;
     display: inline-block;
     margin: 5rem auto;
-    background-color: rgba(255, 255, 255, 0.5); /* optional: slightly visible background */
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent background */
   }
-}  
+}
+
+.content-container {
+  width: 1200px;
+  height: 225px; 
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 3.5px solid #5D4037; /* Classic Dark Brown Border */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+
+}
+
+p{
+  font-size: 1.2rem;
+}
