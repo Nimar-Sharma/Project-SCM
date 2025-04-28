@@ -1,3 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Geist', sans-serif;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4adede);
+  background-size: 600% 600%;
+  animation: GradientShift 10s ease infinite;
+  color: #5D4037;
+}
+
+@keyframes GradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 body {
   font-family: "Geist", sans-serif;
   position: relative;
